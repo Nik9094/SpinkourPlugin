@@ -1,0 +1,6 @@
+name: SpinkourPlugin
+version: '${project.version}'
+main: me.nik.spinkourplugin.SpinkourPlugin
+api-version: '1.15'
+load: STARTUP
+authors: [nik9094]
