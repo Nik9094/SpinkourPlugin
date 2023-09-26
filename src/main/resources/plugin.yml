@@ -2,5 +2,11 @@ name: SpinkourPlugin
 version: '${project.version}'
 main: me.nik.spinkourplugin.SpinkourPlugin
 api-version: '1.15'
-load: STARTUP
+load: POSTWORLD
 authors: [nik9094]
+commands:
+  info:
+    usage: /info
+    description: Opens a helpful book.
+    aliases:
+      - i

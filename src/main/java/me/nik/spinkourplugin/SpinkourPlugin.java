@@ -1,19 +1,21 @@
 package me.nik.spinkourplugin;
 
-import org.bukkit.Location;
-import org.bukkit.World;
+import me.nik.spinkourplugin.classes.Courses;
+import me.nik.spinkourplugin.classes.Messages;
+import me.nik.spinkourplugin.commands.InfoCommand;
+import me.nik.spinkourplugin.listeners.SignInteraction;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.HashMap;
 
 public final class SpinkourPlugin extends JavaPlugin {
 
-    public static HashMap<String, Location> courseLocations = new HashMap<>();
+    public Courses courses = new Courses();
+    public Messages messages = new Messages(this);
     @Override
     public void onEnable() {
-        getLogger().info("Enabled Spinkour plugin...");
-        getServer().getPluginManager().registerEvents(new ClickSign(this), this);
-        setLocations(getServer().getWorld("Spinkour 1_15_2"));
+        getLogger().info("Enabled §eSpin§9kour §fplugin...");
+        getServer().getPluginManager().registerEvents(new SignInteraction(this), this);
+        getCommand("info").setExecutor(new InfoCommand());
+        courses.initCourses();
     }
 
     @Override
@@ -21,10 +23,4 @@ public final class SpinkourPlugin extends JavaPlugin {
         getLogger().info("Disabled Spinkour plugin.");
     }
 
-    public void setLocations(World world) {
-        Location yellow = new Location(world, 16, 59, 10);
-        courseLocations.put("yellow", yellow);
-        //courseLocations.put("blue", new Location(world, 16, 59, 14));
-        //courseLocations.put("red", new Location(world, 16, 59, 18));
-    }
 }
