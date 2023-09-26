@@ -1,5 +1,5 @@
 # SpinkourPlugin
-Plugin for Spintown's parkour map/server Spinkour. [Check him out on Youtube.]([https://](https://www.youtube.com/@Spintown)
+Plugin for Spintown's parkour map/server Spinkour. [Check him out on Youtube.](https://www.youtube.com/@Spintown)
 His server was closed a while back, and he recently hired someone to make a datapack for people to use; so I decided to make a plugin just in case (also so I can practice plugin making a tiny bit).
 This will obviously only work on the official Spinkour world (once I have my hands on it).
 
