@@ -1,7 +1,6 @@
 package me.nik.spinkourplugin.classes;
 
 import me.nik.spinkourplugin.SpinkourPlugin;
-import me.nik.spinkourplugin.classes.Courses;
 import org.bukkit.entity.Player;
 import org.bukkit.ChatColor;
 
