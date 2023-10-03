@@ -10,3 +10,6 @@ commands:
     description: Opens a helpful book.
     aliases:
       - i
+  items:
+    usage: /items
+    description: Gives all the course items.
